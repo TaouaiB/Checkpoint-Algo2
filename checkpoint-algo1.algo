@@ -1,0 +1,28 @@
+ALGORITHM Sum_Calculator
+VAR
+
+i, j : INTEGER := 0 ;
+sum : INTEGER := 0 ;
+
+a1 : ARRAY_OF INTEGER[8,  -45, 8, 781];
+a2 : ARRAY_OF INTEGER[56, -45, 781, 67, 777];
+
+BEGIN
+    for i from 0 to a1.length-1 DO:
+        for j from 0 to a2.length-1 DO :
+            if i !=j result:
+                sum += j
+            End if
+        End for
+    End for
+
+    for i from 0 to a1.length-2 DO:
+        for j from 0 to a2.length-1 DO :
+            if i !=j result:
+                sum += j
+            End if
+        End for
+    End for
+
+    Write(sum)
+END
